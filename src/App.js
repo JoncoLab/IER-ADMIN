@@ -20,6 +20,18 @@ class App extends Component {
     render() {
         return (
             <div className="App">
+                <img
+                    src={logo}
+                    alt="react-logo"
+                    style={{
+                        width: 50 + "px",
+                        height: 50 + "px",
+                        position: "absolute",
+                        top: 10 + "px",
+                        left: 10 + "px"
+                    }}
+                    className="App-logo"
+                />
                 <NavBar changeTab={this.changeTab}/>
                 <Content tabId={this.state.currentTab}/>
             </div>

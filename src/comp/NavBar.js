@@ -11,7 +11,13 @@ export class NavBar extends Component {
     }
     render() {
         return (
-            <nav>
+            <nav id="main-menu"
+                 style={{
+                     display: "flex",
+                     flexDirection: "column",
+                     alignSelf: "center"
+                 }}
+            >
                 <NavItem onTabChange={this.changeTab} text="Новини" tabId="news"/>
                 <NavItem onTabChange={this.changeTab} text="Розклад" tabId="schedule"/>
                 <NavItem onTabChange={this.changeTab} text="Файли" tabId="files"/>

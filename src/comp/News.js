@@ -9,7 +9,7 @@ export class News extends Component {
     }
     render() {
         return (
-            <section id="news" style={{backgroundColor: "red"}}>
+            <section id="news">
 
             </section>
         );
