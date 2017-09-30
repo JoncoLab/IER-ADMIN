@@ -1,5 +1,4 @@
-@import "styles/variables";
-@import "styles/NavBar";
+@import "styles/variables.scss";
 
 .App {
   display: flex;
@@ -13,6 +12,10 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
+
+    * {
+      outline: $line / 10 solid red;
+    }
   }
 
   .logo {
@@ -23,16 +26,4 @@
     top: $line;
     left: $line;
   }
-}
-
-.App-logo {
-}
-
-.App > section * {
-  outline: 1px solid red;
-}
-
-@keyframes App-logo-spin {
-  from { transform: rotate(0deg); }
-  to { transform: rotate(360deg); }
 }
