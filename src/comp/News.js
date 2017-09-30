@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import { NewsComp } from "./news/newsComp";
 import { AnounComp } from "./news/anounComp";
-import { Post } from "./news/postComp"
+import { Post } from "./news/newPost"
 
 export class News extends Component {
     constructor(props) {

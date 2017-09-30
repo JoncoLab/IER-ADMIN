@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { BtnComp } from "./btnComp";
+import { BtnComp } from "./newsBtn";
 import { NewsItem } from "./newsItem";
 
 export class NewsComp extends Component {

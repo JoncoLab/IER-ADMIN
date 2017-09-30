@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 
-class NavItem extends Component {
+export class NavItem extends Component {
     tabId = this.props.tabId;
     constructor(props) {
         super(props);
