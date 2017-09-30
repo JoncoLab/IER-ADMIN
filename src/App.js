@@ -8,16 +8,19 @@ class App extends Component {
     constructor(props) {
         super(props);
         this.state = {
-            currentTab: "News"
+            currentTab: "news"
         };
+        this.changeTab = this.changeTab.bind(this);
     }
-    static changeTab(newTabId) {
-
+    changeTab(newTabId) {
+        this.setState({
+            currentTab: newTabId
+        });
     }
     render() {
         return (
             <div className="App">
-                <NavBar/>
+                <NavBar changeTab={this.changeTab}/>
                 <Content tabId={this.state.currentTab}/>
             </div>
         );

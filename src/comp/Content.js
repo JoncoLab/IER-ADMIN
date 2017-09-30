@@ -5,8 +5,9 @@ import {Files} from "./Files";
 import {Texts} from "./Texts";
 
 export class Content extends Component {
-    render(tabId) {
+    render() {
         let targetTab;
+        let tabId = this.props.tabId;
         switch (tabId) {
             case "news":
                 targetTab = <News/>;

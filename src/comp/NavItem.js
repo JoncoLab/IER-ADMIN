@@ -1,5 +1,4 @@
 import React, { Component } from "react";
-import App from "../App";
 
 export class NavItem extends Component {
     tabId = this.props.tabId;
@@ -9,7 +8,7 @@ export class NavItem extends Component {
     }
     handleClick() {
         const newTabId = this.tabId;
-        this.onChange(newTabId)
+        this.props.onTabChange(newTabId);
     }
     render() {
         return (
