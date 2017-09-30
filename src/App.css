@@ -1,21 +1,25 @@
+@import url(styles/NavBar.css);
 .App {
   display: flex;
   justify-content: space-around;
   width: 100%;
-  height: 100%;
-}
+  height: 100%; }
+  .App > section {
+    flex-grow: 1;
+    background: lightblue;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around; }
 
 .App-logo {
   animation: App-logo-spin infinite 20s linear;
-  height: 80px;
-}
+  height: 80px; }
 
-.App > section {
-  flex-grow: 1;
-  background: lightblue;
-}
+.App > section * {
+  outline: 1px solid red; }
 
 @keyframes App-logo-spin {
-  from { transform: rotate(0deg); }
-  to { transform: rotate(360deg); }
-}
+  from {
+    transform: rotate(0deg); }
+  to {
+    transform: rotate(360deg); } }

@@ -23,14 +23,7 @@ class App extends Component {
                 <img
                     src={logo}
                     alt="react-logo"
-                    style={{
-                        width: 50 + "px",
-                        height: 50 + "px",
-                        position: "absolute",
-                        top: 10 + "px",
-                        left: 10 + "px"
-                    }}
-                    className="App-logo"
+                    className="logo"
                 />
                 <NavBar changeTab={this.changeTab}/>
                 <Content tabId={this.state.currentTab}/>
